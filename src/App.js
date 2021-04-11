@@ -4,14 +4,16 @@ import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
 import ShopPage from './pages/shop/shop.component';
+import Header from './components/header/header.component';
 
 //El componente Route toma una serie de  argumentos, siendo principales 'exact'(con valor true por default, solo se coincidirá para renderizado si el path coincide con el location.pathname, o path, de manera precisa), 'path' (el string que será equivalente al path mismo del lugar en el que nos encontraremos), 'component' (el componente que queremos renderizar)
 function App() {
   return (
     <div>
+      <Header />
       <Switch>
         <Route exact path='/' component={HomePage} />
-        <Route path='/shop' component={ShopPage}/>
+        <Route exact path='/shop' component={ShopPage}/>
       </Switch>
     </div>
   );

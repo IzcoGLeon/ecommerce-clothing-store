@@ -1,0 +1,31 @@
+.header {
+  padding: 20px 60px;
+  height: 100px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  align-items: center;
+
+  .logo-container {
+    height: 100%;
+    width: 110px;
+    padding: 0 25px 0 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .links {
+    height: 100%;
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+
+    .link-item {
+      padding: 10px 15px;
+      font-size: clamp(1.3rem, 2.5vw, 1.5rem);
+    }
+  }
+}
